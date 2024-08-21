@@ -1,0 +1,32 @@
+{
+    "header": {
+      "title": "Mary & Igor",
+      "contacts": "contacto"
+    },
+    "content": {
+      "section1": "Wij zijn Igor ({{igor_age}} jaar) en Maria ({{mariia_age}} jaar), een jong gezin op zoek naar een woning in Amsterdam of Utrecht. We zijn sinds 2013 samen en werden verliefd op Nederland en de Nederlandse cultuur tijdens een twee maanden durend verblijf in Utrecht in de zomer van 2018. Sindsdien bezoeken we Nederland elk jaar om het land beter te leren kennen, waarbij we op de fiets verschillende regio’s verkennen.",
+      "section2": "De afgelopen drie jaar hebben we in Krakau, Polen gewoond. We hebben allebei twee diploma's, waaronder hoger onderwijs. In onze vrije tijd zijn we graag bezig met hardlopen, wandelen, fietsen en reizen. We hebben bijna heel Polen verkend, voornamelijk op de fiets, en daarnaast ook andere landen bezocht, waarbij we vaak deelnamen aan hardloopevenementen. We combineren onze liefde voor reizen met onze andere hobby’s. Bovendien genieten we van strategische bordspellen.",
+      "section3": "Igor is een hooggekwalificeerde programmeur met {{experience_years}} jaar ervaring bij toonaangevende IT-bedrijven zoals Google en GridDynamics, waar hij leidinggevende technische functies bekleedde. Onlangs heeft hij een arbeidscontract getekend met Gerimedica, een IT-gezondheidszorgbedrijf dat zich richt op het verbeteren van het zorgsysteem in Nederland. Ons gezamenlijk inkomen stelt ons in staat om de huur en de kosten van levensonderhoud met gemak te dekken, waardoor tijdige betalingen gegarandeerd zijn. Daarnaast hebben we aanzienlijke besparingen, wat onze financiële stabiliteit verder verzekert.",
+      "section4": {
+        "title": "Wij geloven dat we uitstekende huurders en goede buren zullen zijn, en hier zijn enkele redenen waarom:",
+        "point1": "● We roken niet, drinken geen alcohol en spelen geen muziekinstrumenten. We hebben geen huisdieren, en als we naar muziek luisteren, doen we dat via een koptelefoon.",
+        "point2": "● We geven de voorkeur aan een rustige levensstijl. We organiseren geen luidruchtige feesten en brengen veel tijd buitenshuis door, waarbij we nieuwe plaatsen ontdekken of aan sport doen.",
+        "point3": "● We gaan verantwoordelijk om met de woning, houden deze schoon en netjes.",
+        "point4": "● We beseffen het belang van het leren van de Nederlandse taal en zijn al begonnen met de studie ervan."
+      },
+      "section5": "Wij zijn ervan overtuigd dat een keuze voor ons zal resulteren in betrouwbare en verantwoordelijke huurders.",
+      "section6": "We danken u hartelijk voor het overwegen van onze kandidatuur."
+    },
+    "contacts": {
+      "igor": "Igor",
+      "mary": "Mariia",
+      "phone": "+48 789 378 637",
+      "email": "riseundgo@gmail.com",
+      "actions": {
+        "copy": "kopiëren",
+        "copied": "gekopieerd",
+        "call": "bellen",
+        "email": "emailen"
+      }
+    }
+  }

@@ -1,0 +1,33 @@
+{
+    "header": {
+      "title": "Mary & Igor",
+      "contacts": "contacts"
+    },
+    "content": {
+      "section1": "We are Igor ({{igor_age}} y.o.) and Mariia ({{mariia_age}} y.o), a young family seeking an apartment in Amsterdam or Utrecht. We have been together since 2013 and fell in love with the Netherlands and its culture during a two-month stay in Utrecht in the summer of 2018. Since then, we have travelled to the Netherlands annually to explore the country further by cycling to different locations.",
+      "section2": "For the past three years, we have been living in Krakow, Poland. We both hold two academic degrees, including university educations. In our free time, we enjoy running, hiking, cycling, and travelling. We've explored nearly all of Poland, mostly by bicycle, and we also travel to other countries to participate in running competitions. We tend to combine our love for travel with our hobbies. And we also enjoy playing strategy board games.",
+      "section3": "Igor is a highly qualified Software Engineer with around {{experience_years}} years of experience in leading IT companies like Google and GridDynamics, serving in Technical Leader roles. He has recently signed a work contract with Gerimedica, a healthcare IT company focused on improving healthcare in the Netherlands. Taking the above into consideration, our income comfortably covers both rent and living expenses, ensuring timely and reliable payments. Additionally, we have substantial savings to further guarantee our financial stability.",
+      "section4": {
+        "title": "Here are a few reasons why we would make excellent tenants for you and great neighbours for the community:",
+        "point1": "● We do not: smoke, drink alcohol, or play musical instruments. We also do not have a pet, and when we listen to music, we use headphones.",
+        "point2": "● We prefer quiet living; we do not host noisy parties and we spend much of our time outdoors sightseeing, exploring, or engaging in sports.",
+        "point3": "● We take pride in maintaining a clean, tidy, and orderly living space.",
+        "point4": "● We recognize the importance of learning Dutch and have already started to study the language."
+      },
+      "section5": "We are confident that by choosing us, you will gain loyal and responsible tenants.",
+      "section6": "Thank you for considering our application."
+    },
+    "contacts": {
+      "igor": "Igor",
+      "mary": "Mariia",
+      "phone": "+48 789 378 637",
+      "email": "riseundgo@gmail.com",
+      "actions": {
+        "copy": "copy",
+        "copied": "copied",
+        "call": "call",
+        "email": "email"
+      }
+    }
+  }
+  

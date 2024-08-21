@@ -1,0 +1,24 @@
+.content {
+    background-color: white;
+    width: 95%;
+    max-width: 100vh;
+    position: relative;
+    box-shadow: 0 0 10px 3px rgb(0 0 0 / 36%)
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+*, ::after, ::before {
+    box-sizing: content-box;
+}
+
+@media ((hover: none) and (pointer: coarse)) {
+    .content {
+        max-width: unset;
+    }
+}

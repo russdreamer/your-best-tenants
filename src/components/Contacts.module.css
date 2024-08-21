@@ -1,0 +1,70 @@
+.nav-bar-item {
+    padding: 0.4em 0.8em;
+    margin: 0.2em 0.4em;
+    background-color: transparent;
+    border-style: solid;
+    border-color: transparent;
+    border-width: 1px;
+    color: white;
+    cursor: pointer;
+    outline: none;
+    font-family: 'Georgia', serif;
+}
+
+.nav-bar-item:hover {
+    border-style: solid;
+    border-color: rgba(155, 71, 7, 0.5);
+    background-color: rgba(255, 255, 255, 0.058);
+    color: rgb(255, 255, 255);
+}
+
+.nav-bar-item:active {
+    margin-top: 0.4em;
+    margin-bottom: 0em;
+    cursor: grabbing;
+    box-shadow: inset rgb(255, 0, 0) 0px, 0px 40px 0px, rgb(7, 11, 247) 0px, 30px 100px -24px;
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+.nav-bar-item:focus {
+    outline: none;
+}
+
+.contacts-container {
+    height: 100vh;
+    width: 100vw;
+    left: 0px;
+    position: fixed;
+    justify-content: center;
+    align-content: center;
+    align-items: stretch;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.menu {
+    background-color: transparent;
+    margin: 0;
+    padding: 0;
+}
+
+@media (max-width: 600px) {
+    .contacts {
+        padding: 20px 0px 20px 0px;
+        display: flex;
+        width: 100vw;
+        flex-direction: column;
+        align-content: center;
+        flex-wrap: wrap;
+    }
+
+    .nav-bar-item {
+        padding: 0.2em 0.4em;
+        margin: 0.1em 0.2em;
+    }
+
+    .nav-bar-item:active {
+        margin-top: 0.2em;
+        margin-bottom: 0em;
+    }
+}

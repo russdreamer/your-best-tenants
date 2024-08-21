@@ -1,0 +1,67 @@
+.front-container {
+    display: flex;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 0.5s;
+    height: 100%;
+    width: 100%;
+    left: 0px;
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 3;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.visible {
+    visibility: visible;
+    opacity: 1;
+}
+
+.closable > button {
+    position: relative;
+    float: right;
+    font-weight: 700;
+    font-size: 3rem;
+    padding: 10px;
+    color: #ffffff;
+    text-shadow: 2px 2px 0 #000;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    z-index: 4;
+}
+
+.closable > button:hover {
+    font-weight: 1000;
+}
+
+.closable > button:active {
+    color: #bcbcbc;
+    text-shadow:none;
+    padding-right: 8px;
+    padding-top: 12px;
+}
+
+.closable > button:focus {
+    outline: none;
+}
+
+.closable {
+    position: absolute;
+    width: 100%;
+}
+
+.front-item-container {
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    justify-content: center;
+    position: absolute;
+}
+
+@media (max-width: 600px) {
+    .closable {
+        font-size: 2rem;
+    }
+}
