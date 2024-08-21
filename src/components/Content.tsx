@@ -63,9 +63,11 @@ const FirstParagraph = () => {
 
         updateTextMarginTopBasedOnHeight();
         window.addEventListener('resize', updateTextMarginTopBasedOnHeight);
+        window.addEventListener('load', updateTextMarginTopBasedOnHeight);
 
         return () => {
           window.removeEventListener('resize', updateTextMarginTopBasedOnHeight);
+          window.removeEventListener('load', updateTextMarginTopBasedOnHeight);
         };
       }, [text, image, t]);
 
