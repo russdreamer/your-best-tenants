@@ -90,7 +90,14 @@ export const useLanguage = ():LanguageContextType => {
 
 function getUserLanguage(): string {
     const lan = localStorage.getItem('lan');
-    const ul = Object.values(Languages).find(v => v.code == lan)?.code;
+    var ul = Object.values(Languages).find(v => v.code == lan)?.code;
+    if (!ul) {
+        var prefLanguages = navigator.languages;
+        if (prefLanguages) {
+            prefLanguages = prefLanguages.flatMap(l => l.split('-')).map(l => l.toLowerCase());
+            ul = prefLanguages.find(el => el == Object.values(Languages).find(v => v.code == el)?.code);
+        }
+    }
     return ul || defaultLanguageCode;
 }
 
