@@ -1,4 +1,4 @@
-import { ChangeEvent, useState } from 'react';
+import { ChangeEvent, useEffect, useState } from 'react';
 import LanguageSwitcherCss from './LanguageSwitcher.module.css';
 import { Languages, useLanguage } from '../context/LanguageContext';
 
@@ -12,25 +12,34 @@ export default() => {
         changeLanguage(target.options[target.selectedIndex].id);
     }
 
-    
+    useEffect(() => {
+
+    }, [selectedLangOpt]);
+
     return(
         <div className={LanguageSwitcherCss['switcher-box']}>
-        <select name="language" id={LanguageSwitcherCss['lan']} className={LanguageSwitcherCss.switcher}>
-            <option value="" defaultValue="true">{selectedLangOpt}</option>
-        </select>
-        <select name="language" onChange={(ev) => handleLanguageSelectChange(ev)} id={LanguageSwitcherCss['lan-fake']} className={LanguageSwitcherCss.switcher} value={language ? language : 1}>
-            {Object.entries(Languages).map(([, lang]) => (<option key={lang.code} id={lang.code} value={lang.code}>{lang.flag} {lang.name}</option>))}
-        </select>
+            <div className={`${LanguageSwitcherCss.switcher} ${LanguageSwitcherCss['switcher-container']}`}>
+                <img src={getFlagSource(language)} className={LanguageSwitcherCss.flag}/>
+                <select name="language" id={LanguageSwitcherCss['lan']}>
+                    <option value="" defaultValue="true">{selectedLangOpt}</option>
+                </select>
+            </div>
+            <select name="language" onChange={(ev) => handleLanguageSelectChange(ev)} id={LanguageSwitcherCss['lan-fake']} className={LanguageSwitcherCss.switcher} value={language ? language : 1}>
+                {Object.entries(Languages).map(([, lang]) => (<option key={lang.code} id={lang.code} value={lang.code}>{lang.name}</option>))}
+            </select>
         </div>
     );
 }
 
+function getFlagSource(languageCode: string): string {
+    return Object.entries(Languages).map(([, lang]) => lang).find(lang => lang.code == languageCode)?.flag || Languages.English.flag;
+}
+
 function getCurrentLocale(languageCode: string): string {
     var language = Object.entries(Languages).map(([, lang]) => lang).find(lang => lang.code == languageCode);
-    return shortenLanguage(language ? `${language.flag} ${language.name}` : `${Languages.English.flag} ${Languages.English.name}`);
+    return shortenLanguage(language ? language.name :  Languages.English.name);
 }
 
 function shortenLanguage(text: string): string {
-    const splits = text.split(" ");
-    return `${splits[0]} ${splits[1].substring(0, 2)}`;
+    return text.substring(0, 2);
 }

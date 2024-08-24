@@ -10,21 +10,36 @@
     display: grid;
     grid-template-columns: 1fr;
     align-items: center;
-    width: 60px;
+    width: min-content;
+    height: fit-content;
+    padding-right: 1.2em;
+    background-color: white;
+    border-radius: 100vw;
+}
+
+.switcher-container {
+    border-radius: 100vw;
+    display: flex;
+    align-items: center;
+}
+
+.flag {
+    width: 50%;
+    height: 50%;
 }
 
 #lan {
     border-style: none;
-    border-radius: 10px;
     color: #000000;
     font-family: 'Georgia', serif;
     width: fit-content;
     background-color: white;
+    border-radius: 100vw;
 }
 
 #lan-fake {
     opacity: 0;
-    width: inherit;
+    width: 150%;
 }
 
 @media (max-width: 600px) {

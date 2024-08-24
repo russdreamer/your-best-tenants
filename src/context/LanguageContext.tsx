@@ -2,6 +2,9 @@ import { createContext, useContext, useState } from 'react';
 import en from '../assets/translations/en.json';
 import nl from '../assets/translations/nl.json';
 import ru from '../assets/translations/ru.json';
+import enFlag from '../assets/img/en_flag.png';
+import ruFlag from '../assets/img/ru_flag.png';
+import nlFlag from '../assets/img/nl_flag.png';
 
 type Language = {
     name: string,
@@ -55,9 +58,9 @@ type LanguageContextType = {
 }
 
 export const Languages: {[key:string]: Language} = {
-    English: {name: "English", code: "en", flag: "🇬🇧"},
-    Dutch: {name: "Netherlands", code: "nl", flag: "🇳🇱"},
-    Russian: {name: "Русский", code: "ru", flag: "🇷🇺"}
+    English: {name: "English", code: "en", flag: enFlag},
+    Dutch: {name: "Netherlands", code: "nl", flag: nlFlag},
+    Russian: {name: "Русский", code: "ru", flag: ruFlag}
 }
 
 const defaultLanguageCode = Languages.English.code;
